@@ -23,6 +23,7 @@ namespace ConsoleApp
         {
             var value = string.Empty;
 #pragma warning disable CS0618
+            // If not suppressed, an error will occur
             value += ObsoleteValue;
 #pragma warning restore CS0618
             value += " ";
