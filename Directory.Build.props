@@ -1,0 +1,11 @@
+<Project>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<Deterministic>true</Deterministic>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\'))</RepoRoot>
+		<PathMap>$(RepoRoot)=.</PathMap>
+		<LangVersion>LatestMajor</LangVersion>
+	</PropertyGroup>
+</Project>

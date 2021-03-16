@@ -1,0 +1,9 @@
+﻿<h3>Component</h3>
+
+@code {
+    [Obsolete("obsolete", true)]
+    [Parameter]
+    public string ObsoleteValue { get; set; } = string.Empty;
+    [Parameter]
+    public string Value { get; set; } = string.Empty;
+}
