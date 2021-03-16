@@ -16,8 +16,18 @@ namespace ConsoleApp
     }
     class Component
     {
-        [Obsolete("obsolete value", true)]
+        [Obsolete("obsolete value")]
         public string ObsoleteValue { get; set; } = string.Empty;
         public string Value { get; set; } = string.Empty;
+        public override string ToString()
+        {
+            var value = string.Empty;
+#pragma warning disable CS0618
+            value += ObsoleteValue;
+#pragma warning restore CS0618
+            value += " ";
+            value += Value;
+            return value;
+        }
     }
 }
